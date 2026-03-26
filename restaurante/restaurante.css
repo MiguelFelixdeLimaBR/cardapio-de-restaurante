@@ -1,0 +1,109 @@
+:root{
+      --cor-primaria:#8B0000;
+      --cor-secundaria:#FFD166;
+      --cor-fundo1:#fff8f0;
+      --cor-fundo2:#ffe8d6;
+      --cor-texto:#2b2b2b;
+      --borda-radius:14px;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+
+    body{
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color:var(--cor-texto);
+      line-height:1.6;
+      background: linear-gradient(135deg,var(--cor-fundo1),var(--cor-fundo2));
+    }
+
+    header{
+      background:var(--cor-primaria);
+      color:white;
+      text-align:center;
+      padding:32px 16px;
+      margin-bottom:24px;
+      border-bottom:6px solid var(--cor-secundaria);
+    }
+
+    header h1{
+      font-size:2.4rem;
+      letter-spacing:1px;
+      margin-bottom:8px;
+    }
+
+    header p{
+      opacity:.9;
+      font-style:italic;
+    }
+
+    .container{
+      width:min(1100px,92%);
+      margin:0 auto 40px auto;
+    }
+
+    .card{
+      background:white;
+      border-radius:var(--borda-radius);
+      padding:20px;
+      margin-bottom:24px;
+      border:2px solid #eee;
+      box-shadow:0 6px 18px rgba(0,0,0,.08);
+    }
+
+    .card h2{
+      color:var(--cor-primaria);
+      margin-bottom:14px;
+      border-left:6px solid var(--cor-secundaria);
+      padding-left:10px;
+    }
+
+    .lista-destaques{
+      list-style:square inside;
+      margin-left:10px;
+    }
+
+    .lista-destaques li{
+      padding:6px 0;
+      border-bottom:1px dashed #ddd;
+    }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:10px;
+      font-size:.95rem;
+    }
+
+    th, td{
+      padding:12px;
+      border:1px solid #ddd;
+      text-align:left;
+    }
+
+    th{
+      background:var(--cor-primaria);
+      color:white;
+    }
+
+    tr:nth-child(even){
+      background:#fafafa;
+    }
+
+    .preco{
+      text-align:right;
+      font-weight:bold;
+      color:var(--cor-primaria);
+    }
+
+    footer{
+      text-align:center;
+      padding:20px;
+      margin-top:30px;
+      font-size:.9rem;
+      opacity:.7;
+    }
+
+    @media (max-width:600px){
+      header h1{font-size:1.8rem}
+      th,td{font-size:.85rem}
+    }
